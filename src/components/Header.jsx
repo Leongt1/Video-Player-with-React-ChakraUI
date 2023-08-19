@@ -36,25 +36,42 @@ const Header = () => {
 
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
         <DrawerOverlay />
+
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Video Hub</DrawerHeader>
+          <DrawerHeader>VIDEO HUB</DrawerHeader>
           <DrawerBody>
             <VStack alignItems={'flex-start'}>
-              <Button onClick={onClose} colorScheme={'purple'} variant={'ghost'}>
-                <Link to={`/`}>Home</Link>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
+                <Link to={'/'}>Home</Link>
               </Button>
 
-              <Button onClick={onClose} colorScheme={'purple'} variant={'ghost'}>
-                <Link to={`/videos`}>Videos</Link>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
+                <Link to={'/videos'}>Videos</Link>
               </Button>
 
-              <Button onClick={onClose} colorScheme={'purple'} variant={'ghost'}>
-                <Link to={`/videos?category=free`}>Free Videos</Link>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
+                <Link to={'/videos?category=free'}>Free Videos</Link>
               </Button>
 
-              <Button onClick={onClose} colorScheme={'purple'} variant={'ghost'}>
-                <Link to={`/upload`}>Upload Vodeo</Link>
+              <Button
+                onClick={onClose}
+                variant={'ghost'}
+                colorScheme={'purple'}
+              >
+                <Link to={'/upload'}>Upload Video</Link>
               </Button>
             </VStack>
 
@@ -65,11 +82,15 @@ const Header = () => {
               w={'full'}
               justifyContent={'space-evenly'}
             >
-              <Button onClick={onClose} colorScheme="purple">
-                <Link to={'/login'}>Login</Link>
+              <Button onClick={onClose} colorScheme={'purple'}>
+                <Link to={'/login'}>Log In</Link>
               </Button>
-              <Button onClick={onClose} colorScheme="purple" variant={'outline'}>
-                <Link to={'/signup'}>Signup</Link>
+              <Button
+                onClick={onClose}
+                colorScheme={'purple'}
+                variant={'outline'}
+              >
+                <Link to={'/signup'}>Sign Up</Link>
               </Button>
             </HStack>
           </DrawerBody>

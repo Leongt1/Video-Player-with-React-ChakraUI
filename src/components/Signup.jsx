@@ -1,18 +1,18 @@
 import {
+  Avatar,
   Button,
   Container,
   Heading,
   Input,
-  VStack,
   Text,
-  Avatar,
+  VStack,
 } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Signup = () => {
   return (
-    <Container maxW={'container.xl'} h={'100%'} p={'16'}>
+    <Container maxW={'container.xl'} h={'100vh'} p={'16'}>
       <form>
         <VStack
           alignItems={'stretch'}
@@ -21,7 +21,7 @@ const Signup = () => {
           m={'auto'}
           my={'16'}
         >
-          <Heading alignSelf={'center'}>VIDEO HUB</Heading>
+          <Heading>VIDEO HUB</Heading>
           <Avatar alignSelf={'center'} boxSize={'32'} />
 
           <Input
@@ -42,27 +42,21 @@ const Signup = () => {
             required
             focusBorderColor={'purple.500'}
           />
-          <Input
-            placeholder={'Confirm Password'}
-            type={'password'}
-            required
-            focusBorderColor={'purple.500'}
-          />
 
-          <Button colorScheme="purple" type="submit">
-            Signup
+          <Button colorScheme={'purple'} type={'submit'}>
+            Sign Up
           </Button>
 
           <Text textAlign={'right'}>
-            Existing User?{" "} 
+            Already Signed Up?{' '}
             <Button variant={'link'} colorScheme={'purple'}>
-              <Link to={'/login'}>Log In</Link>
+              <Link to={'/login'}>Login In</Link>
             </Button>
           </Text>
         </VStack>
       </form>
     </Container>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

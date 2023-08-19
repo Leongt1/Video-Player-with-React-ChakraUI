@@ -3,8 +3,8 @@ import {
   Container,
   Heading,
   Input,
-  VStack,
   Text,
+  VStack,
 } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -20,7 +20,8 @@ const Login = () => {
           m={'auto'}
           my={'16'}
         >
-          <Heading alignSelf={'center'}>Welcome back!</Heading>
+          <Heading>Welcome Back</Heading>
+
           <Input
             placeholder={'Email'}
             type={'email'}
@@ -35,17 +36,17 @@ const Login = () => {
           />
 
           <Button variant={'link'} alignSelf={'flex-end'}>
-            <Link to={'/forgotpassword'}>Forgot Password?</Link>
+            <Link to={'/forgetpassword'}>Forget Password?</Link>
           </Button>
 
-          <Button colorScheme="purple" type="submit">
+          <Button colorScheme={'purple'} type={'submit'}>
             Log In
           </Button>
 
           <Text textAlign={'right'}>
-            New User?{" "} 
+            New User?{' '}
             <Button variant={'link'} colorScheme={'purple'}>
-              <Link to={'/signup'}>Signup</Link>
+              <Link to={'/signup'}>Sign Up</Link>
             </Button>
           </Text>
         </VStack>

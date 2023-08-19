@@ -12,10 +12,10 @@ const headingOptions = {
   pos: 'absolute',
   left: '50%',
   top: '50%',
-  transform: 'translate(-50%, -50%)',
-  textTransform: 'upperCase',
+  transform: 'translate(-50%,-50%)',
+  textTransform: 'uppercase',
   p: '4',
-  size: '4',
+  size: '4xl',
 };
 
 const Home = () => {
@@ -23,24 +23,47 @@ const Home = () => {
     <Box>
       <MyCarousel />
 
-      <Container maxW={'container.xl'} minH={'100vh'} p={'16'}>
-        <Heading textTransform={'uppercase'} py={'2'} w={'fit-content'} borderBottom={'2px solid'} m={'auto'}>
+      <Container maxW={'container.xl'} minH={'100vh'} p="16">
+        <Heading
+          textTransform={'uppercase'}
+          py="2"
+          w={'fit-content'}
+          borderBottom={'2px solid'}
+          m="auto"
+        >
           Services
         </Heading>
 
         <Stack
-          h={'full'}
+          h="full"
           p={'4'}
           alignItems={'center'}
           direction={['column', 'row']}
         >
           <Image src={img5} h={['40', '400']} filter={'hue-rotate(-130deg)'} />
 
-          <Text letterSpacing={'widest'} lineHeight={'190%'} p={['4', '16']} textAlign={'center'}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores facere dolorem dignissimos qui necessitatibus error saepe, adipisci enim consequuntur ipsa aliquid quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus necessitatibus quia modi, doloremque dignissimos, tempora enim odit aspernatur quisquam quibusdam sint vel consequuntur incidunt nostrum quos qui architecto consequatur, quam adipisci iure nisi. Laboriosam vel eius dolores. Ipsam totam ut atque ex officia libero ea adipisci quaerat omnis perferendis fugit voluptatum laudantium placeat deserunt, doloremque maxime, a ipsa quod mollitia ab. Ratione molestiae ducimus officiis repellat delectus est ullam perspiciatis deleniti architecto hic voluptatem, mollitia quasi saepe doloribus itaque beatae ab possimus vero sapiente! A quis id dicta tempore temporibus placeat at qui voluptatum dolor! Quae earum animi laudantium.
+          <Text
+            letterSpacing={'widest'}
+            lineHeight={'190%'}
+            p={['4', '16']}
+            textAlign={'center'}
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo
+            tempora deleniti quod, est eos veniam autem asperiores rem, nam
+            laudantium ut, similique ducimus amet sequi et voluptas iusto rerum
+            at aliquid numquam corporis ipsa reprehenderit? Porro iusto magnam,
+            sit vero deleniti, non nemo rem accusamus neque, quibusdam ab.
+            Libero, reprehenderit recusandae labore eaque, aspernatur aliquid
+            modi soluta ullam voluptatum unde repellat in molestias quod?
+            Doloribus ratione illum quisquam earum consequuntur nam voluptatem,
+            velit culpa maiores. Inventore esse illum excepturi dolores est
+            natus aliquid maiores sunt omnis deserunt accusantium amet enim eos
+            adipisci minima hic, nam provident quo aperiam quasi vel?
+            Dignissimos accusantium aliquid aut vel explicabo voluptatum
+            molestias fugit harum reprehenderit incidunt. Quis cumque explicabo
+            omnis officiis autem dolorum!
           </Text>
         </Stack>
-
       </Container>
     </Box>
   );
@@ -83,6 +106,5 @@ const MyCarousel = () => (
     </Box>
   </Carousel>
 );
-
 
 export default Home;
